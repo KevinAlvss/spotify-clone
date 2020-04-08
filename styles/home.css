@@ -1,0 +1,270 @@
+@font-face{
+    font-family: fonte;
+    src: url(../font/CircularStd-Book.otf);
+}
+
+*{box-sizing: border-box;}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: fonte;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    background-color: rgba( 0,0 ,0 , 0.6);
+}
+
+.cabecalho .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+.cabecalho .logo img{
+    height: 50%;
+}
+
+.itens{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ffffff;
+    height: 100%;
+    padding-right: 100px;
+}
+
+.itens a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 23px;
+}
+
+
+.itens a:hover{
+    color: #1ED760;
+}
+
+.itens a:nth-last-child(1){
+    color: #ccc;
+}
+
+.itens a:nth-last-child(2){
+    color: #ccc;
+}
+
+.itens a:nth-last-child(1):hover{
+    color: #1ED760;
+}
+
+.itens a:nth-last-child(2):hover{
+    color: #1ED760;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Background/fundo.svg), linear-gradient(#F037A5 -60%, #FAE62D 140%) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.inicio h1{
+    font-size: 55pt;
+    font-weight: 900;
+    margin: 0;
+}
+
+.inicio p{
+    font-size: 13pt;
+    margin: 20px 0;
+}
+
+.inicio button{
+    margin: 0;
+    color: #ffffff;
+    font-size: 12pt;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(26, 172, 77);
+    text-transform: uppercase;
+    width: 350px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 500ms;
+}
+
+.inicio button:hover{
+    background-color: #1ED760;
+}
+
+.navegaçao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 63vh;
+    padding: 80px 0 0 70px;
+    background-color: #000000;
+}
+
+.navegaçao #left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.navegaçao #left .column{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 195px;
+}
+
+.navegaçao #left .column:first-child{
+    height: 100%;
+    width: 195px;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.navegaçao #left .column img{
+    height: 40px;
+    width: 130px;
+}
+
+.navegaçao a:hover{
+    color: #1ED760;
+}
+
+.column h1{
+    color: #919496;
+    font-size: 10pt;
+    margin: 0;
+}
+
+.column a{
+    text-decoration: none;
+    color: #ffffff;
+    margin: 15px 0;
+    font-size: 11pt;
+    font-weight: 100;
+}
+
+.navegaçao #right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 5;
+    height: 100%;
+}
+
+.icon-social-media{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    background-color: #222326;
+}
+
+.icon-social-media img:first-child{
+    height: 24px;
+    width: 24px;
+}
+
+.rodape{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 20vh;
+}
+
+#itens-rodape a:hover{color: #1ED760;}
+
+#itens-rodape{
+    height: 100%;
+    width: 69%;
+    display: flex;
+    align-items: center;
+}
+
+#itens-rodape a{
+    text-decoration: none;
+    color: #919496;
+    margin: 15px;
+    font-size: 9pt;
+}
+
+#itens-rodape a:first-child{
+    margin-left: 100px;
+}
+
+#rodape-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+    width: 31%;
+    font-size: 9pt;
+    color: #919496;
+}
+
+#rodape-right a{
+    text-decoration: none;
+    color: #919496;
+    margin-right: 10px;
+}
+
+#rodape-right #box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rodape-right #box img{
+    height: 18px;
+    width: 24px;
+}
+
+#rodape-right div{
+    margin-right: 100px;
+    margin-top: 32px;
+    margin-bottom: 15px;
+}
+
+#rodape-right span{
+    margin-right: 100px;
+}
